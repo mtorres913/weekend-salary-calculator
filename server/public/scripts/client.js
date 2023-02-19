@@ -2,7 +2,7 @@ console.log('hello world');
 //Linked Dom elements
 let highCost = 20000
   // Update the total guesses made
-
+let monthCost = 0
 // // Guess history
 // const guessHistory = {}
 // for (let i = 0 < guessInputs.clientHeight; i++){
@@ -42,6 +42,7 @@ function submitData(event) {
 
         </tr>
     `;
+    monthCost 
 }
 // Function to restart the game
 function deleteEmp(event) {

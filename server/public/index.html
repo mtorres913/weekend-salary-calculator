@@ -12,8 +12,8 @@
     <h1 class="title">Salary Calculator</h1>
 
     <h2>Add Employee</h2>
-    <div id="content" class="guess-inputs">
-      <form class="guess-form" onSubmit="submitData(event)">
+    <div id="content" class="data-inputs">
+      <form class="data-form" onSubmit="submitData(event)">
   <input id="first-name" type="text" class="first-name" placeholder="First Name"/>
   <input id="last-name" type="text"  class="last-name" placeholder="Last Name" />
   <input id="emp-id" type="number" class="emp-id" placeholder="ID"/>
@@ -21,7 +21,7 @@
   <input id="emp-salary" type="number" class="emp-salary" placeholder="Annual Salary"/>
    <button type="submit">Submit</button>
       </form>
-    </div>
+  
     <p>Employees</p>
     <table align="center" class="table">
       <!-- Table heading displays the descriptions -->
@@ -35,9 +35,10 @@
           </tr>
       </thead>
       <tbody id="empdata">
-
-
-
+      </tbody>
+    </table>
+    </div>
+      <p>Monthly Cost: <span id="month-cost"></span></p>
     <script src="scripts/client.js"></script>
 </body>
 </html>
