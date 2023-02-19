@@ -22,3 +22,6 @@ body {
     border-bottom: 5px;
     border: 1px solid black;
 }
+.high-cost {
+    background-color: red;
+}
