@@ -2,7 +2,6 @@ console.log('hello world');
 //Linked Dom elements
 let highCost = 20000
   // Update the total guesses made
-let monthCost = 0
 // // Guess history
 // const guessHistory = {}
 // for (let i = 0 < guessInputs.clientHeight; i++){
@@ -21,7 +20,7 @@ function submitData(event) {
     let empId = document.querySelector('#emp-id').value;
     let empTitle = document.querySelector('#emp-title').value;
     let empSalary = document.querySelector('#emp-salary').value;
-
+    let monthCost = document.querySelector('#month-cost');
     // Find the tbody on the page so that we can append to it
     let empData = document.querySelector('#emp-data');
 
@@ -42,7 +41,8 @@ function submitData(event) {
 
         </tr>
     `;
-    monthCost 
+    monthCost.innerHTML = `<p>Monthly Cost: ${empSalary/12}</p>`
+    
 }
 // Function to restart the game
 function deleteEmp(event) {
