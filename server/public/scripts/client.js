@@ -1,6 +1,7 @@
-console.log('hello world');
+console.log('Do not pray for easy lives');
 //Linked Dom elements
 let highCost = 20000
+let salaryTotal = 0
   // Update the total guesses made
 // // Guess history
 // const guessHistory = {}
@@ -9,7 +10,6 @@ let highCost = 20000
 // }
 
 function submitData(event) {
-    console.log('submitGuess');
     // Stop the page from refreshing
     event.preventDefault();
 
@@ -20,11 +20,9 @@ function submitData(event) {
     let empId = document.querySelector('#emp-id').value;
     let empTitle = document.querySelector('#emp-title').value;
     let empSalary = document.querySelector('#emp-salary').value;
-    let monthCost = document.querySelector('#month-cost');
     // Find the tbody on the page so that we can append to it
     let empData = document.querySelector('#emp-data');
-
-    let finalCost = '';
+    let monthCost = document.querySelector('#month-cost')
     // if (monthCost > highCost) {
   // finalCost = background color red to month cost
   
@@ -41,10 +39,16 @@ function submitData(event) {
 
         </tr>
     `;
-    monthCost.innerHTML = `<p>Monthly Cost: ${empSalary/12}</p>`
-    
+    salaryTotal += empSalary/12
+    monthCost.innerHTML =  `<p>Monthly Cost: ${salaryTotal}</p>`
+   // totalGuesses.innerHTML = `<p>Total Guesses Made ${currentIndex}</p>` ;
 }
 // Function to restart the game
 function deleteEmp(event) {
   event.target.parentElement.parentElement.remove();
   }
+  // function monthCost(event){
+  //  let monthCost = document.querySelector('#emp-salary'/12);
+
+  //   finalCost.innerHTML = `<p>Monthly Cost: ${monthCost} </p>`;
+  // }
