@@ -8,9 +8,17 @@ body {
 }
 
 .title {
-    margin: 0;
-    padding: 0;
+    margin: 1px;
+    padding: 1px;
     font-family: 'Roboto', sans-serif;
     background-color: burlywood;
     text-align: center;
+}
+
+.table , th {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    align-items: center;
+    border-bottom: 5px;
+    border: 1px solid black;
 }
