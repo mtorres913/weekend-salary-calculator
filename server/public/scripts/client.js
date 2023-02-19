@@ -42,24 +42,8 @@ function submitData(event) {
 
         </tr>
     `;
-
-
-
+}
 // Function to restart the game
 function deleteEmp(event) {
-    history.player1 = [];
-    history.player2 = [];
-    history.player3 = [];
-    history.player4 = [];
-    document.querySelector('#first-name').innerHTML = `<p>Total Guesses Made</p>`
-    document.querySelector('#first-name').innerHTML = '';
-    document.querySelector('#emp-id').innerHTML = '';
-    document.querySelector('#emp-title').value = ''
-    document.querySelector('#guess-number2').value = ''
-    document.querySelector('#guess-number3').value = ''
-    document.querySelector('#guess-number4').value = ''
-    randomNumber = Math.floor(Math.random() *25) +1
-    console.log(randomNumber)
+  event.target.parentElement.parentElement.remove();
   }
-
-  

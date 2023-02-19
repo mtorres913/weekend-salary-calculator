@@ -15,7 +15,7 @@ body {
     text-align: center;
 }
 
-.table , th {
+.table , th , td {
     font-family: 'Roboto', sans-serif;
     text-align: center;
     align-items: center;
