@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Guess A Number!</title>  
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Guess your number!</h1>
+
+    <h2>Guess a number between 1-25</h2>
+    <div id="content" class="guess-inputs">
+      <form class="guess-form" onSubmit="submitGuess(event)">
+   Player 1: <input id="guess-number1" type="number" class="guess-number1" />
+   Player 2: <input id="guess-number2" type="number"  class="guess-number2"  />
+   Player 3: <input id="guess-number3" type="number" class="guess-number3" />
+   Player 4: <input id="guess-number4" type="number" class="guess-number4"/>
+   <button type="submit">Submit Guess</button>
+      </form>
+    </div>
+    <p class="total-guesses" id="total-guesses"></p>
+    <p class="winner" id="guess-winner"> </p>
+    <table id="customers">
+      <!-- Table heading displays the descriptions -->
+      <thead>
+          <tr>
+              <th>Player 1</th>
+              <th>Player 2</th>
+              <th>Player 3</th>
+              <th>Player 4</th>
+          </tr>
+      </thead>
+      <tbody id="player-guesses">
+
+    <button class="restart-button" onclick="restartGame()">Restart Game</button>
+
+    <script src="scripts/client.js"></script>
+</body>
+</html>
